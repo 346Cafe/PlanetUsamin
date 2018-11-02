@@ -37,14 +37,20 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="/assets/js/bootstrap.min.js"></script>
 		<style>
-			body { padding-top: 70px; }
+			.mt-50 {
+				margin-top: 50px;
+			}
+
+			.mt-100 {
+				margin-top: 100px;
+			}
 		</style>
 	</head>
 
 	<body class="bg-light">
-		<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-success">
+		<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
 			<a class="navbar-brand text-white" href="https://www.usamin.site">
-				<img alt="安部菜々" src="/apple-touch-icon.png" width="40" height="40">
+				<img alt="安部菜々" src="/apple-touch-icon.png" width="30" height="30">
 				ウサミン星
 			</a>
 			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navber" aria-controls="Navber" aria-expanded="false">
@@ -53,17 +59,19 @@
 			<div class="collapse navbar-collapse" id="Navber">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active">
-						<a class="nav-link" href="index.php">ホーム<span class="sr-only"></span></a>
+						<a class="nav-link" href="index.php">ホーム<span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link disabled" href="#">このサイトについて</a>
+					</li>
+					<li class="nav-item">
 						<a class="nav-link disabled" href="#">お問い合わせ</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
 
-		<div class="container mt-3">
+		<div class="container mt-100">
 			<div class="col-sm-8">
 				<div class="alert alert-warning" role="alert">
 					<h4 class="alert-heading">注意</h4>

@@ -33,12 +33,20 @@
 		<link rel="mask-icon" href="/mask-icon.svg" color="#c30234" />
 		<link rel="manifest" href="/assets/manifest.json" />
 		<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+		<link href="//use.fontawesome.com/releases/v5.4.2/css/all.css" rel="stylesheet">
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="/assets/js/bootstrap.min.js"></script>
+		<style>
+			body { padding-top: 70px; }
+		</style>
 	</head>
+
 	<body class="bg-light">
-		<nav class="navbar navbar-expand-lg navbar-light bg-white">
-			<a class="navbar-brand" href="https://www.usamin.site">ウサミン星</a>
+		<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-success">
+			<a class="navbar-brand text-white" href="https://www.usamin.site">
+				<img alt="安部菜々" src="/apple-touch-icon.png" width="40" height="40">
+				ウサミン星
+			</a>
 			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navber" aria-controls="Navber" aria-expanded="false">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -66,7 +74,7 @@
 			</div>
 		<div>
 
-<?php for($i=0;$i<5;$i++){ ?>
+<?php for($i=0;$i<10;$i++){ ?>
 		<div class="container mt-4">
 			<div class="row">
 				<div class="col-sm">

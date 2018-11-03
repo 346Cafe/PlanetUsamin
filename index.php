@@ -53,6 +53,10 @@
 				background-color: rgba(0, 154, 255, 0.9);
 			}
 
+			.border-navbar {
+				border-color: rgba(100, 150, 255, 0.9) !important;
+			}
+
 			.navbar-toggler{
 				background-color: rgba(0, 187, 255, 0.9);
 			}
@@ -60,7 +64,7 @@
 	</head>
 
 	<body class="bg-light">
-		<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-navbar">
+		<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-navbar border-bottom border-navbar shadow">
 			<a class="navbar-brand text-white" href="https://www.usamin.site">
 				<img alt="安部菜々" src="/apple-touch-icon.png" width="30" height="30">
 				ウサミン星
@@ -71,7 +75,7 @@
 			<div class="collapse navbar-collapse" id="Navber">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active">
-						<a class="nav-link" href="index.php">ホーム<span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="/index/">ホーム<span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link disabled" href="#">このサイトについて</a>
@@ -98,17 +102,19 @@
 		<div class="container mt-4">
 			<div class="row">
 				<div class="col-sm">
-					<div class="card">
+					<div class="card shadow-sm border-0">
 						<div class="card-body">
 							<h4 class="card-title">Card title</h4>
+							<hr>
 							<p class="card-text">Sample!</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-sm">
-					<div class="card">
+					<div class="card shadow-sm border-0">
 						<div class="card-body">
 							<h4 class="card-title">Card title</h4>
+							<hr>
 							<p class="card-text">Sample!</p>
 						</div>
 					</div>
@@ -116,5 +122,11 @@
 			</div>			
 		</div>
 <?php } ?>
+
+		<footer class="footer mt-5 mb-3">
+			<div class="container">
+				<small>Copyright (C) 2018 <a href="https://github.com/346Cafe">346Cafe</a> All Rights Reserved.</small>
+			</div>		
+		</footer>
 	</body>
 </html>

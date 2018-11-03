@@ -1,11 +1,14 @@
 <?php
 	require_once "utils/Template.class.php";
 	$template = __DIR__ . "/templates/%s.template.html";
+	$css = __DIR__ . "/assets/css/%s.css";
 	Template::register("navbar", sprintf($template, "navbar"));
 	Template::register("comment", sprintf($template, "comment"));
 	Template::register("header", sprintf($template, "header"));
 	Template::register("developing", sprintf($template, "developing"));
 	Template::register("copyright", sprintf($template, "copyright"));
+	Template::register("bootstrap", sprintf($css, "bootstrap.min"));
+	Template::register("maincss", sprintf($css, "main"));
 ?>
 <!doctype html>
 <html lang="ja">
@@ -13,7 +16,13 @@
 		<?php Template::show("comment", 2); ?>
 		<title>ウサミン星</title>
 		<?php Template::show("header", 2); ?>
-		<script src="/assets/js/contact.js"></script>
+		<style>
+			<?php
+				Template::show("bootstrap", 3);
+				Template::show("maincss", 3, true);
+			?>
+		</style>
+		<script src="/assets/js/contact.js" defer></script>
 	</head>
 
 	<body class="bg-light">
@@ -27,13 +36,13 @@
 					<h4 class="card-title">お問い合わせ</h4>
 					<hr>
 					<div class="form-group">
-						<label for="mail" class="col-4 col-form-label">メールアドレス</label>
-						<div class="col-7">
+						<label for="mail" class="col-12 col-form-label">メールアドレス</label>
+						<div class="col-10 col-sm-8 col-md-6 col-lg-4">
 							<input class="form-control" type="text" placeholder="hello@example.com" id="mail">
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="content" class="col-4 col-form-label">内容</label>
+						<label for="content" class="col-12 col-form-label">内容</label>
 						<div class="col-10">
 							<textarea class="form-control" id="content" rows="5"></textarea>
 						</div>

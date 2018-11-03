@@ -4,13 +4,17 @@ class Template{
 
 	private static $fileMap = [];
 
-	public static function show(string $name, int $tabCount = 0){
+	public static function show(string $name, int $tabCount = 0, bool $doFirst = false){
 		if(!file_exists(self::$fileMap[$name])){
 			return false;
 		}
 		$context = file_get_contents(self::$fileMap[$name]);
 		if($tabCount > 0){
 			$context = str_replace("\n", "\n" . str_repeat("\t", $tabCount), $context);
+		}
+
+		if($doFirst){
+			$context = str_repeat("\t", $tabCount) . $context;
 		}
 		print($context . "\n");
 		return true;

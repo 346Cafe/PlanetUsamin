@@ -1,11 +1,14 @@
 <?php
 	require_once "utils/Template.class.php";
 	$template = __DIR__ . "/templates/%s.template.html";
+	$css = __DIR__ . "/assets/css/%s.css";
 	Template::register("navbar", sprintf($template, "navbar"));
 	Template::register("comment", sprintf($template, "comment"));
 	Template::register("header", sprintf($template, "header"));
 	Template::register("developing", sprintf($template, "developing"));
 	Template::register("copyright", sprintf($template, "copyright"));
+	Template::register("bootstrap", sprintf($css, "bootstrap.min"));
+	Template::register("maincss", sprintf($css, "main"));
 ?>
 <!doctype html>
 <html lang="ja">
@@ -13,6 +16,12 @@
 		<?php Template::show("comment", 2); ?>
 		<title>ウサミン星</title>
 		<?php Template::show("header", 2); ?>
+		<style>
+			<?php
+				Template::show("bootstrap", 3);
+				Template::show("maincss", 3, true);
+			?>
+		</style>
 	</head>
 
 	<body class="bg-light">

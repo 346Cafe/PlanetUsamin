@@ -31,4 +31,12 @@ class Template{
 		unset(self::$fileMap[$name]);
 		return true;
 	}
+
+	public static function replace(string $name, string $newFile){
+		if(isset(self::$fileMap[$name])){
+			unset(self::$fileMap[$name]);
+		}
+		self::$fileMap[$name] = $newFile;
+		return true;
+	}
 }

@@ -44,16 +44,24 @@
 			.mt-100 {
 				margin-top: 100px;
 			}
+
+			.navbar-toggler .navbar-toggler-icon {
+				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+			}
+
+			.bg-navbar {
+				background-color: rgba(0, 123, 255, 0.9) !important;
+			}
 		</style>
 	</head>
 
 	<body class="bg-light">
-		<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+		<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-navbar">
 			<a class="navbar-brand text-white" href="https://www.usamin.site">
 				<img alt="安部菜々" src="/apple-touch-icon.png" width="30" height="30">
 				ウサミン星
 			</a>
-			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navber" aria-controls="Navber" aria-expanded="false">
+			<button type="button" class="navbar-toggler border-warning" data-toggle="collapse" data-target="#Navber" aria-controls="Navber" aria-expanded="false">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="Navber">

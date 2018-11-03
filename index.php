@@ -2,17 +2,13 @@
 	require_once "utils/Template.class.php";
 	$template = __DIR__ . "/templates/%s.template.html";
 	Template::register("navbar", sprintf($template, "navbar"));
+	Template::register("comment", sprintf($template, "comment"));
 	Template::register("header", sprintf($template, "header"));
 ?>
 <!doctype html>
 <html lang="ja">
 	<head>
-		<meta charset="utf-8" />
-		<!--
-		 ###################################################################################
-		   『歌って踊れる声優アイドル目指して、ナナはウサミン星からやってきたんですよぉっ。キャハッ☆』
-		 ###################################################################################
-		-->
+		<?php Template::show("comment", 2); ?>
 		<title>ウサミン星</title>
 		<?php Template::show("header", 2); ?>
 	</head>

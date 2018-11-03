@@ -1,3 +1,8 @@
+<?php
+	require_once "utils/Template.class.php";
+	$template = __DIR__ . "/templates/%s.template.html";
+	Template::register("navbar", sprintf($template, "navbar"));
+?>
 <!doctype html>
 <html lang="ja">
 	<head>
@@ -64,28 +69,7 @@
 	</head>
 
 	<body class="bg-light">
-		<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-navbar border-bottom border-navbar shadow">
-			<a class="navbar-brand text-white" href="https://www.usamin.site">
-				<img alt="安部菜々" src="/apple-touch-icon.png" width="30" height="30">
-				ウサミン星
-			</a>
-			<button type="button" class="navbar-toggler border-warning" data-toggle="collapse" data-target="#Navber" aria-controls="Navber" aria-expanded="false">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="Navber">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="/index/">ホーム<span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link disabled" href="#">このサイトについて</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link disabled" href="#">お問い合わせ</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
+		<?php Template::show("navbar", 2); ?>
 
 		<div class="container mt-100">
 			<div class="col-sm-8">

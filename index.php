@@ -50,7 +50,11 @@
 			}
 
 			.bg-navbar {
-				background-color: rgba(0, 123, 255, 0.9) !important;
+				background-color: rgba(0, 154, 255, 0.9);
+			}
+
+			.navbar-toggler{
+				background-color: rgba(0, 187, 255, 0.9);
 			}
 		</style>
 	</head>

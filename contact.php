@@ -49,7 +49,7 @@
 					</div>
 					<div class="form-group">
 						<div class="col-8">
-							<button class="col-4 btn btn-secondary" disabled="disabled" type="submit" id="submit">送信</button>
+							<button class="col-6 col-sm-4 btn btn-secondary" disabled="disabled" type="submit" id="submit">送信</button>
 						</div>
 					</div>
 				</div>

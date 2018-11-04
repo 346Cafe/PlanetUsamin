@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /utils/
+Disallow: /templates/
+Allow: /
+
+Sitemap: https://www.usamin.site/sitemap.xml

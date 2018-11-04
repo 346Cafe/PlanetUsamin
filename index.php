@@ -42,7 +42,7 @@
 					</div>
 				</div>
 				<div class="col-sm">
-					<div class="card shadow-sm border-0">
+					<div class="card mt-4 mt-sm-0 shadow-sm border-0">
 						<div class="card-body">
 							<h4 class="card-title">Card title</h4>
 							<hr>

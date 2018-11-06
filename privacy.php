@@ -5,7 +5,6 @@
 	Template::register("navbar", sprintf($template, "navbar"));
 	Template::register("comment", sprintf($template, "comment"));
 	Template::register("header", sprintf($template, "header"));
-	Template::register("developing", sprintf($template, "developing"));
 	Template::register("copyright", sprintf($template, "copyright"));
 	Template::register("bootstrap", sprintf($css, "bootstrap.min"));
 	Template::register("maincss", sprintf($css, "main"));

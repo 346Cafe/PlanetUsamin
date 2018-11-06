@@ -54,7 +54,7 @@
 					<p class="card-text">尚、改定後の最新のプライバシーポリシーは本ページにて公開されます。</p>
 
 					<div class="mt-5">
-						<small>制定 : 2018年11月4日</small>
+						<small>制定 : 2018年11月4日</small><br>
 						<small>改定 : 2018年11月6日</small>
 					</div>
 				</div>

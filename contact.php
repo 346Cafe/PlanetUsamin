@@ -14,7 +14,7 @@
 <html lang="ja">
 	<head>
 		<?php Template::show("comment", 2); ?>
-		<title>ウサミン星</title>
+		<title>ウサミン星 | お問い合わせ</title>
 		<?php Template::show("header", 2); ?>
 		<style>
 			<?php

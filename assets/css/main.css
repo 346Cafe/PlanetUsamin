@@ -11,11 +11,11 @@
 }
 
 .bg-navbar {
-	background-color: rgba(0, 154, 255, 0.9);
+	background: linear-gradient(to bottom, rgb(0, 155, 255), rgba(0, 150, 255, 0.95), rgba(0, 145, 255, 0.9), rgba(0, 140, 255, 0.85), rgba(0, 135, 255, 0.8));
 }
 
 .border-navbar {
-	border-color: rgba(100, 150, 255, 0.9) !important;
+	border-color: rgba(0, 120, 255, 0.9) !important;
 }
 
 .navbar-toggler{

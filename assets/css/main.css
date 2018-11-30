@@ -11,13 +11,19 @@
 }
 
 .bg-navbar {
-	background: linear-gradient(to bottom, rgb(0, 155, 255), rgba(0, 150, 255, 0.95), rgba(0, 145, 255, 0.9), rgba(0, 140, 255, 0.85), rgba(0, 135, 255, 0.8));
+	background: linear-gradient(to bottom, rgb(230, 74, 121), rgba(230, 70, 121, 0.95), rgba(230, 65, 121, 0.9), rgba(230, 60, 121, 0.85), rgba(230, 55, 121, 0.8));
 }
 
 .border-navbar {
-	border-color: rgba(0, 120, 255, 0.9) !important;
+	border-color: rgba(230, 100, 121, 0.9) !important;
 }
 
-.navbar-toggler{
-	background-color: rgba(0, 187, 255, 0.9);
+.navbar-toggler {
+	background-color: rgba(230, 45, 121, 0.9);
+}
+
+.dropdown-menu {
+	color: white !important;
+	border-color: white;
+	background-color: rgb(255, 240, 240);
 }

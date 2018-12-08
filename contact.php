@@ -8,7 +8,7 @@
 	Template::register("developing", sprintf($template, "developing"));
 	Template::register("copyright", sprintf($template, "copyright"));
 	Template::register("bootstrap", sprintf($css, "bootstrap.min"));
-	Template::register("maincss", sprintf($css, "main"));
+	Template::register("maincss", sprintf($css, "main.min"));
 ?>
 <!doctype html>
 <html lang="ja">
@@ -19,10 +19,10 @@
 		<style>
 			<?php
 				Template::show("bootstrap", 3);
-				Template::show("maincss", 3, true);
+				Template::show("maincss", 3);
 			?>
 		</style>
-		<script src="/assets/js/contact.js" defer></script>
+		<script src="/assets/js/contact.min.js" defer></script>
 	</head>
 
 	<body class="bg-light">

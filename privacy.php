@@ -7,7 +7,7 @@
 	Template::register("header", sprintf($template, "header"));
 	Template::register("copyright", sprintf($template, "copyright"));
 	Template::register("bootstrap", sprintf($css, "bootstrap.min"));
-	Template::register("maincss", sprintf($css, "main"));
+	Template::register("maincss", sprintf($css, "main.min"));
 ?>
 <!doctype html>
 <html lang="ja">
@@ -18,7 +18,7 @@
 		<style>
 			<?php
 				Template::show("bootstrap", 3);
-				Template::show("maincss", 3, true);
+				Template::show("maincss", 3);
 			?>
 		</style>
 	</head>
